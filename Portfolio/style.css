@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #4BAEA0;
+  }
+
+#container-fluid {
+    padding: 0% 7%;
+}
+
+span {
+    color: black;
+  }
+
+h1, p {
+    color: white;
+}
+
+/* Navigation Styles */
+
+.nav-item {
+    padding: 0 18px;
+    font-size: 1.2rem;
+}
+
+.navbar {
+    background-color: #4baea0
+}
+
+#talk {
+    animation: .6s 0s shake infinite alternate, changeColor 4.8s 1s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% {
+      transform: skewX(-15deg);
+  }
+  5% {
+      transform: skewX(15deg);
+  }
+  10% {
+      transform: skewX(-15deg);
+  }
+  15% {
+      transform: skewX(15deg);
+  }
+  20% {
+      transform: skewX(-15deg);
+  }
+  25% {
+      transform: skewX(15deg);
+  }
+  30% {
+      transform: skewX(-15deg);
+  }
+  35% {
+      transform: skewX(15deg);
+  }
+  50% {
+      transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+  
+  @keyframes changeColor {
+    0% {
+      color: #fff;
+  }
+  24% {
+      color: #fff;
+  }
+  25% {
+      color: #000000;
+  }
+  
+  49% {
+      color: #000000;
+  }
+  
+  50% {
+      color: #ffffff;
+  }
+  
+  74% {
+      color: #ffffff;
+  }
+  75% {
+      color: #000000;
+  }
+  99% {
+      color: #000000;
+  }
+  100% {
+      color: #ffffff;
+  }
+}
+
+/* Title Styles */
+
+.first-title {
+    
+}
+.heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 7.5vw;
+    margin-top: 5%;
+}
+
+.subtitle {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 6.5vw;
+}
+
+/* About Me Styles */
+
+.about {
+    font-size: 2vw;
+    margin: 0 20% 2% 20%;
+}
+
+
+.linkedin-img, .github-img{
+    width: 7vw;
+    border-radius: 50px;
+    transition: width 1s, height 1s, transform 1s; 
+}
+  
+.linkedin-img:hover,  .github-img:hover {
+    background: white;
+    border-radius: 50px;
+    width: 6.5vw;
+    transform: rotate(360deg);
+}
+ 
+/* Projects Styles */
+
+#project-title {
+    font-size: 3vw;
+    margin-top: 2%;
+}
